@@ -79,6 +79,9 @@ public class UserService {
         }
     }
 
+    /*The endpoint should accept a parameter that sets the number of accounts to return.
+    As per page max size limit is 100 we are using per_page and page number to fetch all records */
+
     private int getPageByLimit(int limit) {
         int page = 1;
         if ((limit / 100) > 0) {
